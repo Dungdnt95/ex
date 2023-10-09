@@ -15,7 +15,10 @@ const Store: React.FC = () => {
   const [q, setQ] = useState("");
   const [year, setYear] = useState("");
   const [file, setFile] = useState<File | null>(null);
-  const optionsUser = [{ value: 1, label: "Kew" }];
+  const optionsUser = [
+    { value: 1, label: "Kew" },
+    { value: 2, label: "Liverpool" },
+  ];
   const optionsQ = [
     { value: "Q1", label: "Q1" },
     { value: "Q2", label: "Q2" },
