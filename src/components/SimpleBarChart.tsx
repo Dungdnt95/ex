@@ -10,20 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    name: "Turn Over",
-    Tasmania: 4000,
-    Average: 2400,
-  },
-  {
-    name: "Margin",
-    Tasmania: 3000,
-    Average: 1398,
-  },
-];
-
-const SimpleBarChart = () => {
+const SimpleBarChart: React.FC<{ data: [] }> = ({data}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart

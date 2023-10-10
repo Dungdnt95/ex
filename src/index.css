@@ -21,6 +21,7 @@ code {
   align-items: center;
   justify-content: center;
   height: 300px;
+  padding: 50px 100px;
 }
 
 .ant-col-6 {

@@ -2,7 +2,7 @@ import React from "react";
 import { PieChart, Pie, ResponsiveContainer } from "recharts";
 
 
-const StraightAnglePieChart = (map: []) => {
+const StraightAnglePieChart:React.FC<{data:[]}> = ({data}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <PieChart width={400} height={400}>
@@ -10,7 +10,7 @@ const StraightAnglePieChart = (map: []) => {
           dataKey="value"
           startAngle={180}
           endAngle={0}
-          data={map["map"]}
+          data={data}
           cx="50%"
           cy="50%"
           outerRadius={80}
