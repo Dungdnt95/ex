@@ -1,8 +1,10 @@
 import React from "react";
 import { PieChart, Pie, ResponsiveContainer } from "recharts";
+import { PieChartData } from "../types";
 
-
-const StraightAnglePieChart:React.FC<{data:[]}> = ({data}) => {
+const StraightAnglePieChart: React.FC<{ data: PieChartData | any }> = ({
+  data,
+}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <PieChart width={400} height={400}>

@@ -10,7 +10,10 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const SimpleBarChart: React.FC<{ data: [] }> = ({data}) => {
+const SimpleBarChart: React.FC<{ data: []; keyName: string }> = ({
+  data,
+  keyName,
+}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart
@@ -29,7 +32,7 @@ const SimpleBarChart: React.FC<{ data: [] }> = ({data}) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="Tasmania" fill="#8884d8" />
+        <Bar dataKey={keyName} fill="#8884d8" />
         <Bar dataKey="Average" fill="#82ca9d" />
       </BarChart>
     </ResponsiveContainer>
